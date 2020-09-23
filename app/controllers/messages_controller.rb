@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
 
   def update
     message = Message.find(params[:id])
-    message = update(message_params)
+    message.update!(message_params)
   end
 
   def destroy
